@@ -1,0 +1,6 @@
+{
+  "parent": "betterbuilderswands:item/wand_base",
+  "textures": {
+    "layer0": "betterbuilderswands:item/wand_stone"
+  }
+}

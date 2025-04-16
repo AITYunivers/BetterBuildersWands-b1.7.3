@@ -1,0 +1,7 @@
+accessWidener v2 named
+
+transitive-accessible   field   net/minecraft/client/Minecraft                          INSTANCE Lnet/minecraft/client/Minecraft;
+transitive-accessible   method  net/minecraft/block/Block                               getDroppedItemMeta (I)I
+transitive-accessible   field   net/minecraft/server/network/ServerPlayNetworkHandler   player Lnet/minecraft/entity/player/ServerPlayerEntity;
+transitive-accessible   field   net/minecraft/client/render/GameRenderer                client Lnet/minecraft/client/Minecraft;
+transitive-accessible   method  net/minecraft/client/render/WorldRenderer               renderOutline (Lnet/minecraft/util/math/Box;)V

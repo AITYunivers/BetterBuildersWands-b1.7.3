@@ -1,36 +1,43 @@
 {
   "schemaVersion": 1,
-  "id": "%s",
+  "id": "betterbuilderswands",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Better Builder's Wands",
+  "description": "Wands that allow placing of multiple blocks at a time",
   "authors": [
-    "Me!"
+    "Portablejim", "Yunivers"
   ],
   "contact": {
-    "homepage": "https://glass-launcher.net/",
-    "sources": "https://github.com/calmilamsy/stationapi-example-mod"
+    "homepage": "https://github.com/AITYunivers/BetterBuildersWands-b1.7.3",
+    "sources": "https://github.com/AITYunivers/BetterBuildersWands-b1.7.3",
+    "issues": "https://github.com/AITYunivers/BetterBuildersWands-b1.7.3/issues"
   },
 
-  "license": "CC0-1.0",
-  "icon": "assets/%s/icon.png",
+  "license": "MIT",
+  "icon": "assets/betterbuilderswands/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
-      "%s.events.init.InitListener"
+      "io.github.yunivers.betterbuilderswands.events.init.InitItems"
     ],
     "stationapi:event_bus_client": [
+      "io.github.yunivers.betterbuilderswands.events.init.InitKeybinds"
     ],
     "stationapi:event_bus_server": [
+    ],
+    "bhcreative:event_bus": [
+      "io.github.yunivers.betterbuilderswands.events.init.InitCreativeTabs"
     ]
   },
   "mixins": [
-    "%s.mixins.json"
+    "betterbuilderswands.mixins.json"
   ],
+  "accessWidener" : "betterbuilderswands.accesswidener",
 
   "depends": {
-    "minecraft": "1.0.0-beta.7.3"
+    "minecraft": "1.0.0-beta.7.3",
+    "stationapi": "2.0.0-alpha.4"
   }
 }

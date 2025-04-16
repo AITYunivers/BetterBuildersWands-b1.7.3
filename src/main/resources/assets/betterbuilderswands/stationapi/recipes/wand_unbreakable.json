@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "odo",
+    "dwd",
+    "odo"
+  ],
+  "key": {
+    "w": {
+      "item": "betterbuilderswands:wand_diamond"
+    },
+    "d": {
+      "item": "minecraft:diamond_block"
+    },
+    "o": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "betterbuilderswands:wand_unbreakable",
+    "count": 1
+  }
+}
